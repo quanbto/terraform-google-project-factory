@@ -1,0 +1,17 @@
+# Sample Product file 
+
+apiVersion: kpt.dev/v1alpha1
+kind: Kptfile
+metadata:
+  name: backend-redis-cache
+upstream:
+  type: git
+  git:
+    commit: ignored
+    directory: ignored
+    repo: ignored
+    ref: ignored
+packageMetadata:
+  shortDescription: "Redis cluster as a cache"
+  email: redis-cache-support@teams.company.com
+  version: v4.1.0
