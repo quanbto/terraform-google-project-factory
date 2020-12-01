@@ -1,17 +1,14 @@
-# Sample Product file 
+# Sample Product file - Name it as CatalogProduct.yaml
 
-apiVersion: kpt.dev/v1alpha1
-kind: Kptfile
+apiVersion: catalog.cnrm.cloud.google.com/v1beta1
+kind: Product
 metadata:
   name: backend-redis-cache
-upstream:
-  type: git
-  git:
-    commit: ignored
-    directory: ignored
-    repo: ignored
-    ref: ignored
-packageMetadata:
-  shortDescription: "Redis cluster as a cache"
-  email: redis-cache-support@teams.company.com
-  version: v4.1.0
+display:
+  title: Redis Cache
+  description: "Package to setup simple Redis cluster to be used as a cache"
+  support: redis-cache-support@teams.company.com
+  icon_uri: http://my.cloud.com/icons/redis.svg
+assets:
+  - name: Redis Cache
+    version: v4.1.0
