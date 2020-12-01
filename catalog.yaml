@@ -1,0 +1,8 @@
+# Sample Catalog file
+
+apiVersion: catalog.cnrm.cloud.google.com/v1beta1
+kind: Catalog
+metadata:
+  name: backend-infra-catalog
+displayName: Backend Catalog
+description: Catalog of Backend infrastructure products
